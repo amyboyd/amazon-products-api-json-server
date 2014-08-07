@@ -1,0 +1,5 @@
+conf/application.conf
+tmp/
+test-result/
+logs/
+play-1.2.5.3/

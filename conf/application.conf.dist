@@ -1,0 +1,43 @@
+application.name=Amazon Products API JSON server
+application.mode=dev
+%prod.application.mode=prod
+
+
+# Amazon
+# ~~~~~~
+aws.accessKey=YOUR_ACCESS_KEY
+aws.secretKey=YOUR_SECRET_KEY
+aws.trackingId=YOUR_TRACKING_ID
+
+# A comma-seperate list of response groups.
+# E.g. "ItemAttributes,Images,OfferSummary"
+# For a full list of available response groups, see:
+# http://docs.amazonwebservices.com/AWSECommerceService/2010-09-01/DG/index.html?ItemSearch.html
+aws.responseGroups=ItemAttributes,Images,OfferSummary
+
+# The search index to narrow results by, e.g. "Apparel".
+# Use "All" to find results in all search indexes.
+# For a full list of available search indexes, see:
+# http://docs.aws.amazon.com/AWSECommerceService/latest/DG/APPNDX_SearchIndexValues.html
+aws.searchIndex=All
+
+
+# Secret key
+# ~~~~~~~~~~
+application.secret=REPLACE_ME_WITH_A_RANDOM_STRING
+
+
+# Server configuration
+# ~~~~~~~~~~~~~~~~~~~~
+http.port=12001
+http.address=127.0.0.1
+http.path=/
+
+
+# JVM configuration
+java.source=1.7
+
+
+# Testing
+# ~~~~~~~
+%test.application.mode=dev

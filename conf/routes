@@ -1,0 +1,2 @@
+GET     /items                  Application.getItems
+GET     /countries              Application.getCountries

@@ -1,0 +1,8 @@
+rm logs/application.log
+touch logs/application.log
+echo "Cleared logs/application.log"
+
+port=$( cat conf/application.conf | grep 'http.port' | sed 's/http.port=//' )
+echo "Starting dev server: go to http://localhost:${port}/"
+
+play-1.2.5.3/play run --%dev
